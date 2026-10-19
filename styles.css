@@ -885,6 +885,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 }
 
 .eduTitle {
+  font-family: inherit;
   font-weight: 900;
   color: rgba(255,255,255,0.92);
   line-height: 1.35;
@@ -892,6 +893,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 }
 
 .eduSchool, .eduType {
+  font-family: inherit;
   color: rgba(255, 255, 255, 0.74);
   line-height: 1.45;
 }
