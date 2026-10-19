@@ -572,7 +572,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
   font-weight: 850;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: clamp(24px, 3vw, 40px);
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.92);
 }
 
@@ -781,7 +781,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
   font-weight: 850;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: clamp(24px, 3vw, 40px);
+  font-size: 18px;
   color: rgba(255,255,255,0.92);
 }
 
@@ -854,7 +854,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
   font-weight: 850;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: clamp(18px, 2.4vw, 26px);
+  font-size: 18px;
 }
 
 .sectionCard > h2 {
