@@ -5,7 +5,7 @@
 
       // NEW: About section
       aboutTitle: "O mně",
-      aboutP1: "Jmenuji se Kateřina Čiháková a jsem grafická designérka. Design je pro mě nejen práce, ale i dlouhodobá vášeň, které se věnuji přes 7 let. Tvořím grafiku pro tisk i online projekty a baví mě proměňovat nápady ve vizuálně silné a smysluplné výstupy. Neustále se vzdělávám, učím se pracovat s různorodými nástroji, včetně využití AI, a hledám nové inovativní cesty, jak posouvat svou kreativitu a technické dovednosti dál.",
+      aboutP1: "Jmenuji se Kateřina Čiháková a jsem grafická designérka. Design je pro mě nejen práce, ale i dlouhodobá vášeň, které se věnuji přes 7 let. Tvořím grafiku pro tisk i online projekty a baví mě proměňovat nápady ve vizuálně silné a smysluplné výstupy. Neustále se vzdělávám, učím se pracovat s různorodými nástroji, včetně využití AI, a hledám nové inovativní cesty, jak posouvat svou kreativitu a technické dovednosti dál. Poslední roky se zaměřuji především na oblast game developingu a pracuji na vývoji vlastní city-building strategie.",
       aboutKicker: "Zaměření",
       aboutLi1: "Tiskoviny a předtisková příprava (DTP, exporty, spady)",
       aboutLi2: "Sociální sítě (posty, bannery, šablony, jednoduchý motion)",
@@ -30,7 +30,7 @@
 
       // NEW: About section
       aboutTitle: "About me",
-      aboutP1: "My name is Kateřina Čiháková and I am a graphic designer. For me, design is not just a job, but a long-standing passion that I’ve been pursuing for over 7 years. I create graphics for print and online projects, and I enjoy transforming ideas into visually striking and meaningful outcomes. I’m continuously learning, mastering a variety of tools, including AI, and exploring innovative ways to further develop my creativity and technical skills.",
+      aboutP1: "My name is Kateřina Čiháková and I am a graphic designer. For me, design is not just a job, but a long-standing passion that I’ve been pursuing for over 7 years. I create graphics for print and online projects, and I enjoy transforming ideas into visually striking and meaningful outcomes. I’m continuously learning, mastering a variety of tools, including AI, and exploring innovative ways to further develop my creativity and technical skills. In recent years, I have focused primarily on game development and have been working on my own city-building strategy game.",
       aboutKicker: "Focus",
       aboutLi1: "Print and prepress preparation (DTP, exports, bleed)",
       aboutLi2: "Social media (posts, banners, templates, simple motion)",
