@@ -695,7 +695,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 
 .workH {
   margin: 0 0 10px 0;
-  font-family: "Playfair Display", serif;
+  font-family: inherit;
   font-weight: 850;
   letter-spacing: 0.2px;
   font-size: clamp(18px, 2.1vw, 26px);
