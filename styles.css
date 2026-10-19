@@ -998,6 +998,9 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
   inset: 0;
   z-index: 50;
   display: none;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 .lightbox.is-open { display: block; }
 
@@ -1125,6 +1128,13 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
   .lightbox__info { border-left: 0; border-top: 1px solid rgba(255,255,255,0.10); }
   .lightbox__panel { margin: 44px auto; }
   .lightbox__img { height: min(60vh, 560px); }
+  .lightbox__close {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 1;
+    touch-action: manipulation;
+  }
   .contact__row { grid-template-columns: 110px 1fr; }
 }
 
