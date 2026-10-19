@@ -9,7 +9,7 @@
       aboutKicker: "Zaměření",
       aboutLi1: "Tiskoviny a předtisková příprava (DTP, exporty, spady)",
       aboutLi2: "Sociální sítě (posty, bannery, šablony, jednoduchý motion)",
-      aboutLi3: "Úprava fotografií (retuš, barevnost, konzistentní look)",
+      aboutLi3: "Úprava fotografií (retuš, konzistentní vzhled)",
       aboutLi4: "Herní design (level design, 3D modely, programování, AI, UI)",
 
       skillsTitle: "PRACOVNÍ DOVEDNOSTI",
@@ -34,7 +34,7 @@
       aboutKicker: "Focus",
       aboutLi1: "Print and prepress preparation (DTP, exports, bleed)",
       aboutLi2: "Social media (posts, banners, templates, simple motion)",
-      aboutLi3: "Photo editing (retouching, color, consistent look)",
+      aboutLi3: "Photo editing (retouching, consistent visual style)",
       aboutLi4: "Game design (level design, 3D modeling, programming, AI, UI)",
 
       skillsTitle: "SKILLS",
