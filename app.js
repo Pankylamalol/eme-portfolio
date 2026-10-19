@@ -181,7 +181,7 @@
         title: "DĚTSKÁ ILUSTRACE",
         long: "Hravá ilustrace vydry, kombinující jemné detaily a kontrastní barvy, aby postava působila sympaticky a zapadala do imaginativního prostředí s kouzelnou atmosférou.",
         tags: ["ilustrace","tisk","fantasy"],
-        meta: "Ilustrace / dětská · 2024",
+        meta: "Ilustrace · 2024",
         desc: "Dynamický promo plakát s důrazem na kontrast, silnou typografii a jasný přenos informací. Připraveno i pro online varianty.",
         bullets: ["Kontrast světla a tmy"]
       },
