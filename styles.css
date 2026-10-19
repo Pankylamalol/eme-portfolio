@@ -829,7 +829,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 .xpRight { text-align: right; }
 
 .xpRole {
-  font-family: "Playfair Display", serif;
+  font-family: inherit;
   font-weight: 850;
   font-size: clamp(16px, 2.0vw, 22px);
   color: rgba(255,255,255,0.95);
