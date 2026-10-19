@@ -1075,7 +1075,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 
 .lightbox__title {
   margin: 8px 0 6px 0;
-  font-family: "Playfair Display", serif;
+  font-family: inherit;
   font-weight: 850;
   color: rgba(255,255,255,0.95);
   font-size: clamp(18px, 2.2vw, 26px);
