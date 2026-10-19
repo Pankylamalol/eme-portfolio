@@ -389,6 +389,10 @@
     </footer>
   </main>
 
-  <script src="app.js"></script>
+  <script>
+    const js = document.createElement("script");
+    js.src = `app.js?v=${webVersion}`;
+    document.body.appendChild(js);
+  </script>
 </body>
 </html>
