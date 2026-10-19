@@ -14,6 +14,7 @@
       skillsTitle: "PRACOVNÍ DOVEDNOSTI",
       workTitle: "Ukázky práce",
       workNote: "Klepněte na náhled pro detail. Najeďte myší = zoom + interaktivní efekt.",
+      workNoteTouch: "Klepněte na náhled pro detail.",
       xpTitle: "Zkušenosti",
       xpNote: "",
       eduTitle: "Vzdělání",
@@ -37,6 +38,7 @@
       skillsTitle: "SKILLS",
       workTitle: "WORK SAMPLES",
       workNote: "Tap a preview for details. Hover = zoom + interactive effect.",
+      workNoteTouch: "Tap a preview for details.",
       xpTitle: "Experience",
       xpNote: "Reverse chronological. Responsibilities and scope.",
       eduTitle: "Education",
@@ -336,6 +338,7 @@
   }
 
   const cursorTip = document.getElementById("cursorTip");
+  const canHover = Boolean(window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches);
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
   const lightboxTitle = document.getElementById("lightboxTitle");
@@ -381,6 +384,9 @@
       const key = el.getAttribute("data-i18n");
       if (I18N[lang][key] != null) el.textContent = I18N[lang][key];
     });
+
+    const workNote = document.querySelector(".work__note");
+    if (workNote) workNote.textContent = canHover ? I18N[lang].workNote : I18N[lang].workNoteTouch;
 
     if (cursorTip) cursorTip.textContent = I18N[lang].open;
 
@@ -559,7 +565,9 @@
     const cy = orbitRect.height / 2;
 
     const photoRadius = Math.min(photoRect.width, photoRect.height) / 2;
-    const r = photoRadius + Math.max(70, orbitRect.width * 0.13);
+    const itemRadius = items[0].getBoundingClientRect().width / 2;
+    const maxRadius = Math.max(0, Math.min(orbitRect.width, orbitRect.height) / 2 - itemRadius);
+    const r = Math.min(photoRadius + Math.max(70, orbitRect.width * 0.13), maxRadius);
     const n = items.length;
 
     items.forEach((el, i) => {
@@ -593,13 +601,14 @@
 
   function setupWork() {
     const medias = Array.from(document.querySelectorAll(".workMedia"));
-    const canHover = window.matchMedia && window.matchMedia("(hover: hover)").matches;
 
     medias.forEach(btn => {
       btn.style.setProperty("--mx", "50%");
       btn.style.setProperty("--my", "50%");
 
       btn.addEventListener("pointermove", (e) => {
+        if (e.pointerType !== "mouse" || !canHover) return;
+
         const r = btn.getBoundingClientRect();
         const x = ((e.clientX - r.left) / r.width) * 100;
         const y = ((e.clientY - r.top) / r.height) * 100;
@@ -613,7 +622,7 @@
       });
 
       btn.addEventListener("pointerenter", (e) => {
-        if (cursorTip && canHover) {
+        if (cursorTip && canHover && e.pointerType === "mouse") {
           cursorTip.classList.add("is-on");
           cursorTip.style.left = `${e.clientX + 14}px`;
           cursorTip.style.top = `${e.clientY + 14}px`;
