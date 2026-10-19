@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Webový životopis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Caveat:wght@600;700&family=League+Spartan:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="pageTop" data-lang="cs">
+  <div class="bg" aria-hidden="true"></div>
+
+  <div class="topbar">
+    <div class="langToggle" role="group" aria-label="Jazyk / Language">
+      <button class="langToggle__btn" type="button" data-lang="cs" aria-label="Čeština">
+        <span class="flag">🇨🇿</span><span class="code">CZ</span>
+      </button>
+      <button class="langToggle__btn" type="button" data-lang="en" aria-label="English">
+        <span class="flag">🇬🇧</span><span class="code">ENG</span>
+      </button>
+      <span class="langToggle__thumb" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <div class="cursorTip" id="cursorTip" aria-hidden="true">Otevřít</div>
+
+  <a class="backToTop" href="#pageTop" aria-label="Zpět nahoru">
+    <span class="backToTop__icon" aria-hidden="true">↑</span>
+    <span class="backToTop__text">TOP</span>
+  </a>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__backdrop" data-close></div>
+    <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Detail">
+      <button class="lightbox__close" type="button" aria-label="Zavřít" data-close>×</button>
+      <div class="lightbox__content">
+        <div class="lightbox__imageWrap">
+          <img class="lightbox__img" id="lightboxImg" src="" alt="">
+        </div>
+        <aside class="lightbox__info">
+          <h3 class="lightbox__title" id="lightboxTitle"></h3>
+          <div class="lightbox__meta" id="lightboxMeta"></div>
+          <p class="lightbox__desc" id="lightboxDesc"></p>
+          <ul class="lightbox__list" id="lightboxList"></ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <header class="hero">
+      <h1 class="hero__name">Kateřina ČIHÁKOVÁ</h1>
+      <div class="hero__role" data-i18n="role">Grafický designer</div>
+    </header>
+
+    <section class="orbit" aria-label="Rychlé menu">
+      <div class="orbit__photo" aria-label="Profilová fotografie">
+        <img src="assets/IMG_6394%20(2).jpeg" alt="Profilová fotografie" />
+      </div>
+
+      <svg class="orbit__arc" viewBox="0 0 420 420" aria-hidden="true">
+        <path class="orbit__arcBase" d="M 210 20 A 190 190 0 0 1 210 400" />
+        <path class="orbit__arcFill" d="M 210 20 A 190 190 0 0 1 210 400" />
+        <circle class="orbit__arcDot orbit__arcDot--top" cx="210" cy="20" r="7"></circle>
+        <circle class="orbit__arcDot orbit__arcDot--bottom" cx="210" cy="400" r="7"></circle>
+      </svg>
+
+      <nav class="orbit__items" aria-label="Menu ikon">
+        <a class="orbit__item" href="#about" data-label-cs="O mě" data-label-en="About Me" data-label="O mě" aria-label="O mě">
+          <span class="orbit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </span>
+        </a>
+
+        <a class="orbit__item" href="#skills" data-label-cs="Pracovní dovednosti" data-label-en="Skills" data-label="Pracovní dovednosti" aria-label="Pracovní dovednosti">
+          <span class="orbit__icon orbit__icon--large" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 21h6v-1H9v1z"></path>
+              <path d="M12 2c-3.3 0-6 2.7-6 6 0 2.2 1.2 4.1 3 5.2V16c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-2.8c1.8-1.1 3-3 3-5.2 0-3.3-2.7-6-6-6zm2.7 10.2-.7.4V15h-4v-2.4l-.7-.4C7.9 11.3 7 9.7 7 8c0-2.8 2.2-5 5-5s5 2.2 5 5c0 1.7-.9 3.3-2.3 4.2z"></path>
+              <path d="M18.6 12.6l.8-.8.9.9-.8.8.3 1.1h1.1v1.3h-1.1l-.3 1.1.8.8-.9.9-.8-.8-1.1.3v1.1h-1.3v-1.1l-1.1-.3-.8.8-.9-.9.8-.8-.3-1.1H13v-1.3h1.1l.3-1.1-.8-.8.9-.9.8.8 1.1-.3V11h1.3v1.1l1.1.3z"></path>
+            </svg>
+          </span>
+        </a>
+
+        <a class="orbit__item" href="#workTitle" data-label-cs="Ukázky práce" data-label-en="Work" data-label="Ukázky práce" aria-label="Ukázky práce">
+          <span class="orbit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/></svg>
+          </span>
+        </a>
+
+        <a class="orbit__item" href="#experience" data-label-cs="Pracovní zkušenosti" data-label-en="Work Experience" data-label="Pracovní zkušenosti" aria-label="Pracovní zkušenosti">
+          <span class="orbit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M10 2h4c1.1 0 2 .9 2 2v2h4c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h4V4c0-1.1.9-2 2-2zm4 4V4h-4v2h4z"/></svg>
+          </span>
+        </a>
+
+        <a class="orbit__item" href="#educationTitle" data-label-cs="Vzdělání" data-label-en="Education" data-label="Vzdělání" aria-label="Vzdělání">
+          <span class="orbit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3zm0 13L5 12.2V15c0 2.8 3.1 5 7 5s7-2.2 7-5v-2.8L12 16z"/></svg>
+          </span>
+        </a>
+
+        <a class="orbit__item" href="#contact" data-label-cs="Kontakt" data-label-en="Contact" data-label="Kontakt" aria-label="Kontakt">
+          <span class="orbit__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.28-.26.35-.66.23-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.5-.5-1-1-1H4c-.5 0-1 .5-1 1 0 9.39 7.61 17 17 17 .5 0 1-.5 1-1v-3.52c0-.5-.5-1-1-1z"/></svg>
+          </span>
+        </a>
+      </nav>
+    </section>
+
+    <section class="sectionCard aboutCard reveal" data-reveal id="about" aria-label="O mně">
+      <div class="cardHead">
+        <h2 class="cardTitle" data-i18n="aboutTitle">O MĚ</h2>
+        <div class="cardLine" aria-hidden="true"></div>
+      </div>
+
+      <div class="aboutGrid">
+        <div class="aboutText">
+          <p class="aboutP" data-i18n="aboutP1">
+            Jsem grafická designérka se zaměřením na čistý vizuální styl, typografii a praktické výstupy pro tisk i online.
+            Baví mě hledat jednoduchá řešení, která dobře fungují v reálném provozu.
+          </p>
+
+        </div>
+
+        <div class="aboutHighlights" aria-label="Zaměření">
+          <div class="aboutKicker" data-i18n="aboutKicker">Zaměření</div>
+          <ul class="aboutList">
+            <li data-i18n="aboutLi1">Tiskoviny a předtisková příprava (DTP, exporty, spady)</li>
+            <li data-i18n="aboutLi2">Sociální sítě (posty, bannery, šablony, jednoduchý motion)</li>
+            <li data-i18n="aboutLi3">Úprava fotografií (retuš, barevnost, konzistentní look)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionCard skillsCard reveal" data-reveal id="skills" aria-label="Pracovní dovednosti">
+      <div class="cardHead">
+        <h2 class="cardTitle" data-i18n="skillsTitle">PRACOVNÍ DOVEDNOSTI</h2>
+        <div class="cardLine" aria-hidden="true"></div>
+      </div>
+
+      <div class="skillsStrip" role="list" aria-label="Loga pracovních dovedností">
+        <button class="skillLogo" type="button" data-label="Adobe Photoshop" aria-label="Adobe Photoshop">
+          <img src="assets/icons/photoshop.png" alt="" loading="lazy">
+        </button>
+        <button class="skillLogo" type="button" data-label="Adobe Illustrator" aria-label="Adobe Illustrator">
+          <img src="assets/icons/illustrator.png" alt="" loading="lazy">
+        </button>
+        <button class="skillLogo" type="button" data-label="Adobe InDesign" aria-label="Adobe InDesign">
+          <img src="assets/icons/indesign.png" alt="" loading="lazy">
+        </button>
+        <button class="skillLogo" type="button" data-label="Figma" aria-label="Figma">
+          <img src="assets/icons/figma.png" alt="" loading="lazy">
+        </button>
+        <button class="skillLogo" type="button" data-label="CorelDRAW" aria-label="CorelDRAW">
+          <img src="assets/icons/coreldraw-icon.png" alt="" loading="lazy">
+        </button>
+        <button class="skillLogo" type="button" data-label="Unreal Engine" aria-label="Unreal Engine">
+          <img src="assets/icons/unreal-engine-icon.png" alt="" loading="lazy">
+        </button>
+        <button class="skillLogo" type="button" data-label="Blender" aria-label="Blender">
+          <img src="assets/icons/blender-icon.png" alt="" loading="lazy">
+        </button>
+        <button class="skillLogo" type="button" data-label="Canva" aria-label="Canva">
+          <img src="assets/icons/canva-icon.png" alt="" loading="lazy">
+        </button>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-label="Ukázky práce">
+      <div class="work__head">
+        <h2 class="work__title" id="workTitle" data-i18n="workTitle">Ukázky práce</h2>
+        <div class="work__note" data-i18n="workNote"></div>
+      </div>
+
+      <div class="work__list">
+        
+        <article class="workRow reveal" data-reveal data-work="w1">
+          <button class="workMedia" type="button" data-work="w1" aria-label="Otevřít" data-img="assets/work/01-social.jpg">
+            <img src="assets/work/01-social.jpg.jpg" alt="" loading="lazy">
+          </button>
+          <div class="workText" data-work="w1">
+            <div class="workKicker"></div>
+            <h3 class="workH"></h3>
+            <p class="workP"></p>
+            <div class="workTags"></div>
+          </div>
+        </article>
+
+        <div class="workTrail" data-trail aria-hidden="true">
+          <svg viewBox="0 0 600 120" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="trailGrad1" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="rgba(191,230,242,0.35)"/>
+                <stop offset="0.5" stop-color="rgba(244,179,198,0.65)"/>
+                <stop offset="1" stop-color="rgba(244,179,198,0.20)"/>
+              </linearGradient>
+            </defs>
+            <path d="M590,90 C480,10 360,110 240,40 C140,-5 80,65 10,30" />
+          </svg>
+        </div>
+
+        <article class="workRow workRow--reverse reveal" data-reveal data-work="w2">
+          <button class="workMedia" type="button" data-work="w2" aria-label="Otevřít" data-img="assets/work/dpd.png">
+             <img src="assets/work/dpd.png" alt="" loading="lazy">
+          </button>
+          <div class="workText" data-work="w2">
+            <div class="workKicker"></div>
+            <h3 class="workH"></h3>
+            <p class="workP"></p>
+            <div class="workTags"></div>
+          </div>
+        </article>
+
+        <div class="workTrail" data-trail aria-hidden="true">
+          <svg viewBox="0 0 600 120" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="trailGrad2" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="rgba(244,179,198,0.20)"/>
+                <stop offset="0.5" stop-color="rgba(244,179,198,0.65)"/>
+                <stop offset="1" stop-color="rgba(191,230,242,0.35)"/>
+              </linearGradient>
+            </defs>
+            <path d="M10,30 C150,95 220,10 340,80 C460,150 510,35 590,90" />
+          </svg>
+        </div>
+
+        <article class="workRow reveal" data-reveal data-work="w3">
+          <button class="workMedia" type="button" data-work="w3" aria-label="Otevřít" data-img="assets/work/03-makame.jpg">
+             <img src="assets/work/03-makame.jpg.jpg" alt="" loading="lazy">
+          </button>
+          <div class="workText" data-work="w3">
+            <div class="workKicker"></div>
+            <h3 class="workH"></h3>
+            <p class="workP"></p>
+            <div class="workTags"></div>
+          </div>
+        </article>
+
+        <div class="workTrail" data-trail aria-hidden="true">
+          <svg viewBox="0 0 600 120" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="trailGrad3" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="rgba(191,230,242,0.25)"/>
+                <stop offset="0.5" stop-color="rgba(244,179,198,0.60)"/>
+                <stop offset="1" stop-color="rgba(244,179,198,0.25)"/>
+              </linearGradient>
+            </defs>
+            <path d="M10,70 C120,5 250,125 360,55 C450,0 520,110 590,55" />
+          </svg>
+        </div>
+
+        <article class="workRow workRow--reverse reveal" data-reveal data-work="w4">
+          <button class="workMedia" type="button" data-work="w4" aria-label="Otevřít" data-img="assets/work/Mikina%20Kreveta.jpg">
+             <img src="assets/work/Mikina%20Kreveta.jpg" alt="" loading="lazy">
+          </button>
+          <div class="workText" data-work="w4">
+            <div class="workKicker"></div>
+            <h3 class="workH"></h3>
+            <p class="workP"></p>
+            <div class="workTags"></div>
+          </div>
+        </article>
+
+        <div class="workTrail" data-trail aria-hidden="true">
+          <svg viewBox="0 0 600 120" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="trailGrad4" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="rgba(191,230,242,0.35)"/>
+                <stop offset="0.5" stop-color="rgba(244,179,198,0.65)"/>
+                <stop offset="1" stop-color="rgba(244,179,198,0.20)"/>
+              </linearGradient>
+            </defs>
+            <path d="M590,90 C480,10 360,110 240,40 140,-5 80,65 10,30" />
+          </svg>
+        </div>
+
+        <article class="workRow reveal" data-reveal data-work="w5">
+           <button class="workMedia" type="button" data-work="w5" aria-label="Otevřít" data-img="assets/work/Gym%20template.png">
+             <img src="assets/work/Gym%20template.png" alt="" loading="lazy">
+          </button>
+          <div class="workText" data-work="w5">
+            <div class="workKicker"></div>
+            <h3 class="workH"></h3>
+            <p class="workP"></p>
+            <div class="workTags"></div>
+          </div>
+        </article>
+
+        <div class="workTrail" data-trail aria-hidden="true">
+          <svg viewBox="0 0 600 120" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="trailGrad5" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="rgba(191,230,242,0.35)"/>
+                <stop offset="0.5" stop-color="rgba(244,179,198,0.65)"/>
+                <stop offset="1" stop-color="rgba(244,179,198,0.20)"/>
+              </linearGradient>
+            </defs>
+            <path d="M10,90 C120,10 240,110 360,40 C460,-5 520,65 590,30" />
+          </svg>
+        </div>
+
+        <article class="workRow workRow--reverse reveal" data-reveal data-work="w6">
+          <button class="workMedia" type="button" data-work="w6" aria-label="Otevřít" data-img="assets/work/Learning%20Cards.png">
+             <img src="assets/work/Learning%20Cards.png" alt="" loading="lazy">
+          </button>
+          <div class="workText" data-work="w6">
+            <div class="workKicker"></div>
+            <h3 class="workH"></h3>
+            <p class="workP"></p>
+            <div class="workTags"></div>
+          </div>
+        </article>
+
+        <div class="workTrail" data-trail aria-hidden="true">
+          <svg viewBox="0 0 600 120" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="trailGrad6" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="rgba(191,230,242,0.35)"/>
+                <stop offset="0.5" stop-color="rgba(244,179,198,0.65)"/>
+                <stop offset="1" stop-color="rgba(244,179,198,0.20)"/>
+              </linearGradient>
+            </defs>
+            <path d="M10,90 C120,10 240,110 360,40 C460,-5 520,65 590,30" transform="translate(0 120) scale(1 -1)" />
+          </svg>
+        </div>
+
+        <article class="workRow reveal" data-reveal data-work="w7">
+           <button class="workMedia" type="button" data-work="w7" aria-label="Otevřít" data-img="assets/work/Otter.jpg">
+             <img src="assets/work/Otter.jpg" alt="" loading="lazy">
+          </button>
+          <div class="workText" data-work="w7">
+            <div class="workKicker"></div>
+            <h3 class="workH"></h3>
+            <p class="workP"></p>
+            <div class="workTags"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="xp" id="experience" aria-label="Zkušenosti">
+      <div class="xp__head">
+        <h2 class="xp__title" data-i18n="xpTitle">Zkušenosti</h2>
+        <div class="xp__note" data-i18n="xpNote"></div>
+      </div>
+      <div class="xp__list" id="xpList"></div>
+    </section>
+
+    <section class="sectionCard reveal" data-reveal id="education">
+      <div class="eduHead">
+        <h2 id="educationTitle" data-i18n="eduTitle">Vzdělání</h2>
+      </div>
+      <div class="eduList" id="eduList"></div>
+    </section>
+
+    <section class="sectionCard reveal" data-reveal id="contact">
+      <h2 data-i18n="contactTitle">Kontakt</h2>
+      <div class="contact">
+        <div class="contact__row">
+          <span class="contact__label" data-i18n="phoneLabel">Telefon</span>
+          <span class="contact__value">+420 739 728 119</span>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label" data-i18n="emailLabel">Email</span>
+          <span class="contact__value">katerinacihakova2@seznam.cz</span>
+        </div>
+        <div class="contact__row">
+          <span class="contact__label">CV</span>
+          <a class="contact__link" href="assets/work/CV%20K.png" target="_blank" rel="noopener noreferrer">Otevřít CV</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Kateřina Čiháková</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
