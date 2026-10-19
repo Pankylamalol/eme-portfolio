@@ -193,6 +193,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
   margin: 0 auto;
   padding: 64px 16px 64px;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 56px;
   justify-items: center;
 }
@@ -239,7 +240,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 
 .orbit {
   position: relative;
-  width: min(720px, 96vw);
+  width: min(720px, 100%);
   aspect-ratio: 1/1;
   display: grid;
   place-items: center;
@@ -247,7 +248,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 
 .orbit__photo {
   position: relative;
-  width: min(510px, 90vw);
+  width: min(510px, 100%);
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
@@ -1110,8 +1111,8 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
   .aboutGrid { grid-template-columns: 1fr; }
   .topbar { top: 10px; right: 10px; }
   .wrap { padding-top: 78px; gap: 44px; }
-  .orbit { width: min(640px, 96vw); }
-  .orbit__photo { width: min(440px, 92vw); }
+  .orbit { width: min(640px, 100%); }
+  .orbit__photo { width: min(440px, 100%); }
   .workRow, .workRow--reverse { grid-template-columns: 1fr; }
   .workRow--reverse .workMedia { order: 1; }
   .workRow--reverse .workText { order: 2; }
@@ -1130,7 +1131,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 @media (max-width: 520px) {
   .topbar { left: 50%; right: auto; transform: translateX(-50%); }
   .wrap { padding-left: 12px; padding-right: 12px; gap: 40px; }
-  .orbit__photo { width: min(440px, 54vw); }
+  .orbit__photo { width: min(440px, 60%); }
   .backToTop {
     left: 12px;
     bottom: 12px;
@@ -1158,11 +1159,6 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 @media (hover: none), (pointer: coarse) {
   .cursorTip { display: none; }
 
-  .orbit__item {
-    width: 58px;
-    height: 58px;
-  }
-
   .orbit__item:hover:not(:focus-visible) {
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.62);
@@ -1177,6 +1173,8 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 
   .skillLogo {
     aspect-ratio: auto;
+    width: 100%;
+    min-width: 0;
     max-width: none;
     min-height: 92px;
     padding: 10px;
@@ -1195,6 +1193,9 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 
   .skillLogo::after {
     position: static;
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
     padding: 0;
     border: 0;
     background: none;
@@ -1226,5 +1227,22 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 
   .workMedia[data-work="w7"]:hover img {
     transform: scale(1.10);
+  }
+}
+
+@media (max-width: 520px) and (hover: none), (max-width: 520px) and (pointer: coarse) {
+  .orbit__item {
+    width: 28px;
+    height: 28px;
+  }
+
+  .orbit__icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .orbit__icon--large svg {
+    width: 14px;
+    height: 14px;
   }
 }
