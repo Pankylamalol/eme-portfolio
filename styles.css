@@ -231,10 +231,10 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 
 .hero__role {
   margin-top: 6px;
-  font-family: "League Spartan", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: clamp(22px, 2.2vw, 34px);
-  color: var(--text-on-dark);
+  color: rgba(255, 255, 255, 0.92);
   letter-spacing: 0.4px;
 }
 
@@ -1121,7 +1121,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
   .workRow--reverse .workText { order: 2; }
   .workTrail { height: 70px; }
   .xpCard__grid { grid-template-columns: 1fr; }
-  .xpRight { text-align: left; }
+  .xpRight { order: -1; text-align: left; }
   .eduItem { grid-template-columns: 1fr; }
   .eduYears { justify-self: start; }
   .lightbox__content { grid-template-columns: 1fr; }

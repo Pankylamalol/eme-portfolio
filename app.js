@@ -177,8 +177,8 @@
 
     w7: {
       cs: {
-        kicker: "ILUSTRACE / ILLUSTRATION",
-        title: "Dětská ilustrace",
+        kicker: "ILUSTRACE",
+        title: "DĚTSKÁ ILUSTRACE",
         long: "Hravá ilustrace vydry, kombinující jemné detaily a kontrastní barvy, aby postava působila sympaticky a zapadala do imaginativního prostředí s kouzelnou atmosférou.",
         tags: ["ilustrace","tisk","fantasy"],
         meta: "Ilustrace / dětská · 2024",
