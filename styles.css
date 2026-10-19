@@ -1005,7 +1005,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 .lightbox.is-open { display: block; }
 
 .lightbox__backdrop {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.72);
   backdrop-filter: blur(8px);
