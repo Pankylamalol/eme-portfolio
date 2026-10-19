@@ -5,7 +5,7 @@
 
       // NEW: About section
       aboutTitle: "O mně",
-      aboutP1: "Jmenuji se Kateřina Čiháková a jsem grafická designérka. Design je pro mě nejen práce, ale i dlouhodobá vášeň, které se věnuji přes 7 let. Tvořím grafiku pro tisk i online projekty a baví mě proměňovat nápady ve vizuálně silné a smysluplné výstupy. Neustále se vzdělávám, učím se pracovat s různorodými nástroji a hledám nové inovativní cesty, jak posouvat svou kreativitu  a technické dovednosti dál.",
+      aboutP1: "Jmenuji se Kateřina Čiháková a jsem grafická designérka. Design je pro mě nejen práce, ale i dlouhodobá vášeň, které se věnuji přes 7 let. Tvořím grafiku pro tisk i online projekty a baví mě proměňovat nápady ve vizuálně silné a smysluplné výstupy. Neustále se vzdělávám, učím se pracovat s různorodými nástroji, včetně využití AI, a hledám nové inovativní cesty, jak posouvat svou kreativitu a technické dovednosti dál.",
       aboutKicker: "Zaměření",
       aboutLi1: "Tiskoviny a předtisková příprava (DTP, exporty, spady)",
       aboutLi2: "Sociální sítě (posty, bannery, šablony, jednoduchý motion)",
@@ -29,7 +29,7 @@
 
       // NEW: About section
       aboutTitle: "About me",
-      aboutP1: "My name is Kateřina Čiháková and I am a graphic designer. For me, design is not just a job, but a long-standing passion that I’ve been pursuing for over 7 years. I create graphics for print and online projects, and I enjoy transforming ideas into visually striking and meaningful outcomes. I’m constantly learning, mastering a variety of tools, and seeking new, innovative ways to push my creativity and technical skills to the next level.",
+      aboutP1: "My name is Kateřina Čiháková and I am a graphic designer. For me, design is not just a job, but a long-standing passion that I’ve been pursuing for over 7 years. I create graphics for print and online projects, and I enjoy transforming ideas into visually striking and meaningful outcomes. I’m continuously learning, mastering a variety of tools, including AI, and exploring innovative ways to further develop my creativity and technical skills.",
       aboutKicker: "Focus",
       aboutLi1: "Print and prepress preparation (DTP, exports, bleed)",
       aboutLi2: "Social media (posts, banners, templates, simple motion)",
@@ -40,7 +40,7 @@
       workNote: "Tap a preview for details. Hover = zoom + interactive effect.",
       workNoteTouch: "Tap a preview for details.",
       xpTitle: "Experience",
-      xpNote: "Reverse chronological. Responsibilities and scope.",
+      xpNote: "",
       eduTitle: "Education",
       contactTitle: "Contact",
       phoneLabel: "Phone",
@@ -64,11 +64,11 @@
       en: {
         kicker: "SOCIAL MEDIA",
         title: "TATTOO ARTIST POST DESIGN",
-        long: "Minimalist and clean visual design created for quick orientation on Instagram. A dark mood is complemented by a soft red accent, referencing the artist's significant look and giving the post a strong visual identity.",
+        long: "A minimalist, clean visual designed for easy browsing on Instagram. Its dark mood is complemented by a subtle red accent that reflects the tattoo artist's signature style and gives the post a distinctive visual identity.",
         tags: ["post","online","branding","minimalism"],
         meta: "Instagram / promo visuals · 2025",
-        desc: "A set of posts and formats designed for social media with focus on mobile readability and consistent feed style.",
-        bullets: ["Layout and typography design","Post + story variations","Reusable Templates"]
+        desc: "A series of posts and social media formats designed with an emphasis on clear hierarchy, mobile readability, and a consistent feed style.",
+        bullets: ["Layout and typography design","Post + story variations","Reusable templates"]
       }
     },
     w2: {
@@ -190,7 +190,7 @@
         title: "CHILDREN'S ILLUSTRATION",
         long: "Playful illustration of an otter, combining fine details and contrasting colors to create a charming character that fits into an imaginative environment with a magical atmosphere.",
         tags: ["illustration","print","fantasy"],
-        meta: "Illustration / children's · 2024",
+        meta: "Illustration · 2024",
         desc: "A dynamic promo poster focused on contrast, bold typography and clear information hierarchy.",
         bullets: ["Light and dark contrast"]
       }
