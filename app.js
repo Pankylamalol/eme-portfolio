@@ -503,7 +503,7 @@
     
     // Pokud tam obrázek je a má zdroj, použiju ho. 
     // Pokud ne, zkusím původní data-img (jako zálohu).
-    const src = (smallImg && smallImg.src) ? smallImg.src : (btn.getAttribute("data-img") || "");
+    const src = btn.getAttribute("data-img") || ((smallImg && smallImg.src) ? smallImg.src : "");
 
     lightboxImg.src = src;
     

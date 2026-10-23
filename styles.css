@@ -641,7 +641,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 }
 
 .workMedia[data-work="w4"] img {
-  transform: scale(1.08);
+  object-fit: contain;
 }
 
 .workMedia[data-work="w7"] img {
@@ -667,9 +667,6 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 
 .workMedia[data-work="w3"]:hover img,
 .workMedia[data-work="w3"]:focus-visible img { transform: translateY(10px) scale(1.40); }
-
-.workMedia[data-work="w4"]:hover img,
-.workMedia[data-work="w4"]:focus-visible img { transform: scale(1.12); }
 
 .workMedia[data-work="w7"]:hover img,
 .workMedia[data-work="w7"]:focus-visible img { transform: scale(1.14); }
@@ -1103,10 +1100,9 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 .reveal {
   opacity: 0;
   transform: translateY(18px);
-  filter: blur(2px);
-  transition: opacity 420ms ease, transform 420ms ease, filter 420ms ease;
+  transition: opacity 420ms ease, transform 420ms ease;
 }
-.reveal.is-in { opacity: 1; transform: none; filter: none; }
+.reveal.is-in { opacity: 1; transform: none; }
 
 @media (max-width: 980px) {
   .skillsStrip { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -1237,10 +1233,6 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
   .workMedia:hover img,
   .workMedia[data-work="w3"]:hover img {
     transform: scale(1);
-  }
-
-  .workMedia[data-work="w4"]:hover img {
-    transform: scale(1.08);
   }
 
   .workMedia[data-work="w7"]:hover img {
