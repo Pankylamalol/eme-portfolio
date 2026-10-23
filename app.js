@@ -80,7 +80,7 @@
         long: "Vizuál respektující charakteristický styl značky, doplněný hravými prvky a přehledným krok za krokem uspořádaným obsahem.",
         tags: ["tisk","firemní vizuál","leták"],
         meta: "Tiskoviny · 2022",
-        desc: "Dynamický promo plakát s důrazem na kontrast, silnou typografii a jasný přenos informací. Připraveno i pro online varianty.",
+        desc: "Dynamický promo plakát s důrazem na kontrast, silnou typografii a jasný přenos informací. Připraveno i pro online varianty. Z důvodu zachování interních informací byl text pro ukázku práce nahrazen.",
         bullets: ["Exporty a šablony pro opakované použití","Logický vizuál s jasným sdělením","Globální vizuální konzistence"]
       },
       en: {
@@ -89,7 +89,7 @@
         long: "A visual that respects the brand's characteristic style, complemented with playful elements and structured step-by-step content.",
         tags: ["print","corporate identity","flyer"],
         meta: "Print · 2022",
-        desc: "A dynamic promo poster focused on contrast, bold typography and clear information hierarchy.",
+        desc: "A dynamic promo poster focused on contrast, bold typography and clear information hierarchy. To protect internal information, the text was replaced for this work sample.",
         bullets: ["Exports and Reusable Templates","A clear, logically structured visual message","Global visual consistency"]
       }
     },
@@ -511,9 +511,7 @@
     if (lightboxTitle) lightboxTitle.textContent = btn.dataset.title || "";
     if (lightboxMeta) lightboxMeta.textContent = btn.dataset.meta || "";
     if (lightboxDesc) {
-      const row = btn.closest(".workRow");
-      const previewDesc = row ? row.querySelector(".workP") : null;
-      lightboxDesc.textContent = previewDesc ? previewDesc.textContent : (btn.dataset.desc || "");
+      lightboxDesc.textContent = btn.dataset.desc || "";
     }
     if (lightboxList) {
       lightboxList.innerHTML = "";
