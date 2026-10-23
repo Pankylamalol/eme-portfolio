@@ -636,8 +636,8 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 }
 
 .workMedia[data-work="w3"] img {
-  object-fit: contain;
-  background: rgba(0, 0, 0, 0.22);
+  object-fit: cover;
+  transform: translateY(18px) scale(1.36);
 }
 
 .workMedia[data-work="w4"] img {
@@ -666,7 +666,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 .workMedia:focus-visible img { transform: scale(1.04); }
 
 .workMedia[data-work="w3"]:hover img,
-.workMedia[data-work="w3"]:focus-visible img { transform: scale(1.01); }
+.workMedia[data-work="w3"]:focus-visible img { transform: translateY(18px) scale(1.40); }
 
 .workMedia[data-work="w4"]:hover img,
 .workMedia[data-work="w4"]:focus-visible img { transform: scale(1.12); }
