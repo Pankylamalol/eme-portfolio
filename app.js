@@ -80,7 +80,7 @@
         long: "Vizuál respektující charakteristický styl značky, doplněný hravými prvky a přehledným krok za krokem uspořádaným obsahem.",
         tags: ["tisk","firemní vizuál","leták"],
         meta: "Tiskoviny · 2022",
-        desc: "Dynamický promo plakát s důrazem na kontrast, silnou typografii a jasný přenos informací. Připraveno i pro online varianty. Z důvodu zachování interních informací byl text pro ukázku práce nahrazen.",
+        desc: "Vizuál respektující charakteristický styl značky, doplněný hravými prvky a přehledným krok za krokem uspořádaným obsahem. Z důvodu zachování interních informací byl text pro ukázku práce nahrazen.",
         bullets: ["Exporty a šablony pro opakované použití","Logický vizuál s jasným sdělením","Globální vizuální konzistence"]
       },
       en: {
