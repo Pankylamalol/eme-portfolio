@@ -118,7 +118,7 @@
       cs: {
         kicker: "TEXTIL / TISK",
         title: "POTISK KREVETA",
-        long: "Jednoduchých motiv doplněný stylizovaným japonským nápisem. Návrh je připraven s ohledem na flexibilitu použití, včetně různých barevných variant a adaptace na tmavý podklad, aby design zůstal výrazný a čitelný.",
+        long: "Jednoduchý motiv doplněný stylizovaným japonským nápisem. Návrh je připraven s ohledem na flexibilitu použití, včetně různých barevných variant a adaptace na tmavý podklad, aby design zůstal výrazný a čitelný.",
         tags: ["tisk","merch","textil"],
         meta: "Potisk / merch · 2023",
         desc: "Jednoduchý motiv doplněný stylizovaným japonským nápisem. Návrh je připraven s ohledem na flexibilitu použití, včetně různých barevných variant a adaptace na tmavý podklad, aby design zůstal výrazný a čitelný.",
@@ -425,7 +425,7 @@
       if (btn) {
         btn.dataset.title = data.title;
         btn.dataset.meta = data.meta;
-        btn.dataset.desc = data.desc;
+        btn.dataset.desc = id === "w2" ? data.desc : data.long;
         btn.dataset.bullets = data.bullets.join("|");
         btn.setAttribute("aria-label", `${I18N[lang].open}: ${data.title}`);
       }
