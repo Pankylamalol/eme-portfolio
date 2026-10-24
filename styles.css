@@ -645,7 +645,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 }
 
 .workMedia[data-work="w7"] img {
-  transform: scale(1.10);
+  transform: scale(1.07);
 }
 
 .workMedia::after {
@@ -669,7 +669,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
 .workMedia[data-work="w3"]:focus-visible img { transform: translateY(10px) scale(1.40); }
 
 .workMedia[data-work="w7"]:hover img,
-.workMedia[data-work="w7"]:focus-visible img { transform: scale(1.14); }
+.workMedia[data-work="w7"]:focus-visible img { transform: scale(1.11); }
 
 .workText {
   border-radius: 26px;
@@ -1236,7 +1236,7 @@ body[data-lang="en"] .langToggle__btn[data-lang="en"] {
   }
 
   .workMedia[data-work="w7"]:hover img {
-    transform: scale(1.10);
+    transform: scale(1.07);
   }
 }
 

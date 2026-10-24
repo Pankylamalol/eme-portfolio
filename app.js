@@ -185,7 +185,7 @@
         tags: ["ilustrace","tisk","fantasy"],
         meta: "Ilustrace · 2024",
         desc: "Hravá ilustrace vydry s jemnými detaily a kontrastními barvami. Postava zapadá do imaginativního prostředí s kouzelnou fantasy atmosférou.",
-        bullets: ["Kontrast světla a tmy"]
+        bullets: ["Důraz na kontrast","Knižní ilustrace"]
       },
       en: {
         kicker: "ILLUSTRATION",
