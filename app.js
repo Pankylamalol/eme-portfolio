@@ -100,7 +100,7 @@
         long: "Kombinace fotografie, výrazných barev a typografie. Layout navržený tak, aby i při rychlém scrollování zůstal čitelný a zapamatovatelný.",
         tags: ["plakát","promo","layout","foto"],
         meta: "Plakát / post · 2025",
-        desc: "Dynamický promo plakát s důrazem na kontrast, silnou typografii a jasný přenos informací. Připraveno i pro online varianty.",
+        desc: "Kombinace fotografie, výrazných barev a typografie. Layout navržený tak, aby i při rychlém scrollování zůstal čitelný a zapamatovatelný.",
         bullets: ["Silná headline typografie","Formáty pro tisk i online","Rychlá orientace a čitelnost"]
       },
       en: {
@@ -109,7 +109,7 @@
         long: "Combination of photography, bold colors, and typography. A layout designed to remain readable and memorable even during fast scrolling.",
         tags: ["poster","promo","layout","photo"],
         meta: "Poster / post · 2025",
-        desc: "A dynamic promo poster focused on contrast, bold typography and clear information hierarchy.",
+        desc: "Combination of photography, bold colors, and typography. A layout designed to remain readable and memorable even during fast scrolling.",
         bullets: ["Strong headline typography","Formats for print and online use","Quick orientation and readability"]
       }
     },
@@ -121,7 +121,7 @@
         long: "Jednoduchých motiv doplněný stylizovaným japonským nápisem. Návrh je připraven s ohledem na flexibilitu použití, včetně různých barevných variant a adaptace na tmavý podklad, aby design zůstal výrazný a čitelný.",
         tags: ["tisk","merch","textil"],
         meta: "Potisk / merch · 2023",
-        desc: "Dynamický promo plakát s důrazem na kontrast, silnou typografii a jasný přenos informací. Připraveno i pro online varianty.",
+        desc: "Jednoduchý motiv doplněný stylizovaným japonským nápisem. Návrh je připraven s ohledem na flexibilitu použití, včetně různých barevných variant a adaptace na tmavý podklad, aby design zůstal výrazný a čitelný.",
         bullets: []
       },
       en: {
@@ -130,7 +130,7 @@
         long: "A simple motif complemented by a stylized Japanese inscription. The design is created with a focus on flexible use, including various color variants and adaptation to dark backgrounds, ensuring the design remains bold and legible.",
         tags: ["print","merch","textile"],
         meta: "Print / merch · 2023",
-        desc: "A dynamic promo poster focused on contrast, bold typography and clear information hierarchy.",
+        desc: "A simple motif complemented by a stylized Japanese inscription. The design is created with a focus on flexible use, including various color variants and adaptation to dark backgrounds, ensuring the design remains bold and legible.",
         bullets: []
       }
     },
@@ -142,7 +142,7 @@
         long: "Jednoduché, ale výrazné logo propojující sílu fitness světa s osobní identitou majitele — ikonický motiv vousů jako dominantní prvek značky. Vytvořeno s důrazem na čistotu tvarů, osobitost a univerzální využití v tisku i online.",
         tags: ["logo","fitness","branding","merch"],
         meta: "Logo / fitness · 2023",
-        desc: "Dynamický promo plakát s důrazem na kontrast, silnou typografii a jasný přenos informací. Připraveno i pro online varianty.",
+        desc: "Jednoduché, ale výrazné logo propojující sílu fitness světa s osobní identitou majitele. Ikonický motiv vousů vytváří dominantní a snadno zapamatovatelný prvek značky pro tisk i online použití.",
         bullets: ["Osobní brand identita","Čisté geometrické tvary","Moderní sportovní vizuál"]
       },
       en: {
@@ -151,7 +151,7 @@
         long: "A simple yet bold logo combining the strength of the fitness world with the owner's personal identity — the iconic beard motif as the brand's dominant element. Designed with a focus on clean shapes, individuality, and versatile use in both print and digital media.",
         tags: ["logo","fitness","branding","merch"],
         meta: "Logo / fitness · 2023",
-        desc: "A dynamic promo poster focused on contrast, bold typography and clear information hierarchy.",
+        desc: "A simple yet bold logo connecting the strength of the fitness world with the owner's personal identity. The iconic beard motif creates a dominant, memorable brand element for both print and online use.",
         bullets: ["Personal brand identity","Clean geometric shapes","Modern sports visual style"]
       }
     },
@@ -163,7 +163,7 @@
         long: "Důraz na jednoduchost, čitelnost a snadnou zapamatovatelnost, aby učení bylo efektivní a intuitivní. Vhodné i pro widgety.",
         tags: ["widget","ilustrace","tisk","online"],
         meta: "Vzdělávací materiály · 2024",
-        desc: "Dynamický promo plakát s důrazem na kontrast, silnou typografii a jasný přenos informací. Připraveno i pro online varianty.",
+        desc: "Vzdělávací kartičky s důrazem na jednoduchost, čitelnost a snadné zapamatování. Systém je navržený pro efektivní a intuitivní učení v tisku, online i ve widgetech.",
         bullets: ["Jednoduchý a přehledný design","Formáty pro tisk i online","Minimalistický vizuální styl"]
       },
       en: {
@@ -172,7 +172,7 @@
         long: "Emphasis on simplicity, clarity, and easy memorization to make learning effective and intuitive. Also suitable for widgets.",
         tags: ["widget","illustration","print","online"],
         meta: "Educational materials · 2024",
-        desc: "A dynamic promo poster focused on contrast, bold typography and clear information hierarchy.",
+        desc: "Educational flashcards focused on simplicity, clarity, and easy memorization. The system is designed for effective, intuitive learning in print, online, and widget formats.",
         bullets: ["Simple and clear design","Formats for print and online use","Minimalist visual style"]
       }
     },
@@ -184,7 +184,7 @@
         long: "Hravá ilustrace vydry, kombinující jemné detaily a kontrastní barvy, aby postava působila sympaticky a zapadala do imaginativního prostředí s kouzelnou atmosférou.",
         tags: ["ilustrace","tisk","fantasy"],
         meta: "Ilustrace · 2024",
-        desc: "Dynamický promo plakát s důrazem na kontrast, silnou typografii a jasný přenos informací. Připraveno i pro online varianty.",
+        desc: "Hravá ilustrace vydry s jemnými detaily a kontrastními barvami. Postava zapadá do imaginativního prostředí s kouzelnou fantasy atmosférou.",
         bullets: ["Kontrast světla a tmy"]
       },
       en: {
@@ -193,7 +193,7 @@
         long: "Playful illustration of an otter, combining fine details and contrasting colors to create a charming character that fits into an imaginative environment with a magical atmosphere.",
         tags: ["illustration","print","fantasy"],
         meta: "Illustration · 2024",
-        desc: "A dynamic promo poster focused on contrast, bold typography and clear information hierarchy.",
+        desc: "A playful otter illustration using fine details and contrasting colors. The character belongs in an imaginative setting with a magical fantasy atmosphere.",
         bullets: ["Light and dark contrast"]
       }
     }
