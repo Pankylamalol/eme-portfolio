@@ -230,7 +230,7 @@
         meta: "DPD",
         bullets: [
           "Tvorba interních firemních prospektů a jednostránkových materiálů.",
-          "Úpravy šablon, sjednocení stylu, příprava pro tisk (PDF, ořez, spadávka).",
+          "Úpravy šablon, sjednocení stylu, příprava pro tisk.",
           "Spolupráce na drobných grafických požadavcích napříč týmy."
         ]
       }
